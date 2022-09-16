@@ -44,7 +44,7 @@ Solves Ax=b by L-U factorization with forward and backwrds substitution. Finds L
 ### power_method.m
 The power method is an iteritive method of finding eignevalues of a complex matrix A. It is capable of finding the eigenvalue furthest away or closet to (L2) a given point, mu, in the complex plain. It also finds the associated eigenvetor. The method assmes that there is a single eigenvalue furthers away from mu, and A has a linearly independent set of eigenvectors.
 
-### gramSchmidt.m
+### gram_schmidt_process.m
 Given a matrix A, mxn, of rank n, the algorithm gives matrices B, mxn, and T, nxn, such that the columns of B form an orthonormal set , and A = B * T.
 
 ### householder_QR_factorization.m
