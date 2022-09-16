@@ -8,7 +8,7 @@ Given a continuous funciton $f$, finds a value $x$ such that $f(x) = 0$. Methods
 Bisection method. Given continuous $f: R \rightarrow R$, endpoints $[a,b]$ with $\text{sign}(f(a)) != \text{sign}(f(b))$, finds $c$, $a \leq c \leq b$, such that $f(c)=0$. Has linear rate of convergence. For more details see the [wikipedia](https://en.wikipedia.org/wiki/Bisection_method) article.
 
 ### newtons_method.m
-Newton's Method. Given $f:R^n -> R^n$, initial inout $x_0$, finds $x_\text{f}$ such that $f(x_\text{f}) = 0$. $f$ must be continuously differentiable. The method generally  has a quadratic rate of convergence, but may fail to converge. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method) article.
+Newton's Method. Given $f:R^n \rightarrow R^n$, initial inout $x_0$, finds $x_\text{f}$ such that $f(x_\text{f}) = 0$. $f$ must be continuously differentiable. The method generally  has a quadratic rate of convergence, but may fail to converge. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method) article.
 
 
 ## Linear Solvers
