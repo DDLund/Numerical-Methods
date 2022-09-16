@@ -47,5 +47,7 @@ The power method is an iteritive method of finding eignevalues of a complex matr
 ### gramSchmidt.m
 Given a matrix A, mxn, of rank n, the algorithm gives matrices B, mxn, and T, nxn, such that the columns of B form an orthonormal set , and A = B * T.
 
-### householder.m
+### householder_QR_factorization.m
+Given a mxn matrix A, finds matrices Q, mxm, and R, mxn, such that Q is unitary, R is upper triangular, and A = Q * R.
+
 
