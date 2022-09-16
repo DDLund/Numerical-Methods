@@ -18,10 +18,10 @@ Methods of solving for x in the equation Ax=b, and associated tasks.
 An iteritive method, with iteration $x_{k+1} = (I-wA) x_k + wb$. Guarenteed to converge or particular sets of $A$, values of $w$. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Modified_Richardson_iteration) article.
 
 ### jacobi_method.m
-An iteritive method, with iteration $x_{k+1} = (I - Q^-1 * A) x_k + Q^-1 b$, where $Q$ is a diagonal matrix with $\text{diag}(Q) = \text{diag}(A)$. Guarenteed to converge if $A$ is diagonally dominant. Diagonal dominants means the magnitude of each diagonal entry is greater than the sum of the magnitudes of all non-diagonal entries in the row. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Jacobi_method) article.
+An iteritive method, with iteration $x_{k+1} = (I - Q^{-1} * A) x_k + Q^{-1} b$, where $Q$ is a diagonal matrix with $\text{diag}(Q) = \text{diag}(A)$. Guarenteed to converge if $A$ is diagonally dominant. Diagonal dominants means the magnitude of each diagonal entry is greater than the sum of the magnitudes of all non-diagonal entries in the row. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Jacobi_method) article.
 
 ### gauss_seidel_method.m
-An iteritive method, with iteration $x_{k+1} = (I - Q^-1 * A) x_k + Q^-1 b$, where $Q$ is the lower triangular part of $A$. Guarenteed to converge if $A$ is diagonally dominant or symmetric positie definite. Generally faster than the Jacobi method.
+An iteritive method, with iteration $x_{k+1} = (I - Q^{-1} * A) x_k + Q^{-1} b$, where $Q$ is the lower triangular part of $A$. Guarenteed to converge if $A$ is diagonally dominant or symmetric positie definite. Generally faster than the Jacobi method.
 
 
 ### chebyshev_acceleration.m
