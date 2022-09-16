@@ -33,18 +33,18 @@ Given an approximate solution to Ax=b, usually found by another method, finds x 
 ### steepest_descent.m
 Iteritive method to solve Ax=b for A real symmetric positive-definite matrix.
 
-### ConjGrad.m
+### conjugate_gradient.m
 Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n steps, where A is nxn.
 
 ### LU_decomp_solver.m
 Solves Ax=b by L-U factorization with forward and backwrds substitution. Assumes A... Finds L lower trianguler, U upper triangular, so that A = L * U. Then solves the equations Ly = b and Ux = b. Included is a DoLittle factorization, where L has unit diagonal. 
 
+## Other Methods
+
 ### PowerMethod.m
-
-
-
-
+The power method is an iteritive method of finding eignevalues of a complex matrix A. It is capable of finding the eigenvalue furthest away or closet to (L2) a given point, mu, in the complex plain. It also finds the associated eigenvetor. The method assmes that there is a single eigenvalue furthers away from mu, and A has a linearly independent set of eigenvectors.
 
 ### gramSchmidt.m
+
 
 ### householder.m
