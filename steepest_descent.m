@@ -3,7 +3,16 @@
 A=[4,-1,-1,0;-1,4,0,-1;-1,0,4,-1;0,-1,-1,4];
 b=[-4;0;4;-4];
 x0=[0;0;0;0];
-[x,r] = stepDesc(A,b,x0,10);
+[x,r,e] = stepDesc(A,b,x0,10);
+x
+r
+e
+
+%test input for an ill-conditioned matrix
+A=hilb(5);
+b=(1/3)*sum(A,2);
+x0=[0;0;0;0;0];
+[x,r,e] = stepDesc(A,b,x0,10);
 x
 r
 e
