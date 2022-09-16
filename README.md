@@ -30,19 +30,21 @@ Solves Ax=b using Chebyshev acceleration. For more details, see the [wikipedia](
 ### iteritive_refinement.m
 Given an approximate solution to Ax=b, usually found by another method, finds x closer to true solution through an iteritive refining process.
 
+### steepest_descent.m
+Iteritive method to solve Ax=b for A real symmetric positive-definite matrix.
+
 ### ConjGrad.m
+Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n iterations, where A is nxn.
 
 
 ### LUSolver.m
 
 ### PowerMethod.m
 
-### SteepestDescent.m
+
 
 
 
 ### gramSchmidt.m
 
 ### householder.m
-
-### richardson.m
