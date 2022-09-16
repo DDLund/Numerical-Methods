@@ -37,7 +37,7 @@ Iteritive method to solve Ax=b for A real symmetric positive-definite matrix.
 Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n steps, where A is nxn.
 
 ### LU_decomp_solver.m
-Solves Ax=b by L-U factorization with forward and backwrds substitution. Assumes A... Finds L lower trianguler, U upper triangular, so that A = L * U. Then solves the equations Ly = b and Ux = b. Included is a DoLittle factorization, where L has unit diagonal. 
+Solves Ax=b by L-U factorization with forward and backwrds substitution. Finds L lower trianguler, U upper triangular, so that A = L * U. Then solves the equations Ly = b and Ux = y. Included is a DoLittle factorization, where L has unit diagonal. 
 
 ## Other Methods
 
