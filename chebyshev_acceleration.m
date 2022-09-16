@@ -57,7 +57,7 @@ r=u-A^-1*b0;
 e=A*u-b0;
 end
 
-%what the book says
+%methods for the solver
 function v = Extrap(G,gamma,c,u)
 v=gamma*c+(1-gamma)*u;
 v=gamma*G*u+v;
