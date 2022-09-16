@@ -1,12 +1,22 @@
 % LU-factorization with forward and back sub.
 
-function x = LUSolver(A,b)
+% test input
+A=[60,30,20;30,20,15;20,15,12];
+b=[110;65;47];
+n=3;
+[x,r]=LUSolver(A,b);
+x
+r
+
+
+function [x,r] = LUSolver(A,b)
 A=single(A);
 b=single(b);
 n=size(A,1);
 [L,U]=dolittle(n,A);
 y=forwardSub(n,L,b);
 x=backSub(n,U,y);
+r = A*x-b;
 end
 
 function x = forwardSub(n,L,b)
@@ -56,10 +66,3 @@ for k=2:n
 end
 
 end
-
-%A=[60,30,20;30,20,15;20,15,12]
-%b=[110;65;47]
-%n=3
-%x=LUSolver(A,b)
-
-
