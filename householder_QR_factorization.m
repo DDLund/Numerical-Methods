@@ -1,5 +1,16 @@
 % Householder's QR factorization
 
+% test input
+A = [1,1;2,3;5,7];
+[Q,R] = householder(A);
+Q
+R
+A - Q * R
+
+% check Q is unitary
+Q*Q'
+norm(Q)
+
 function [Q,R] = householder(A)
 [m,n]=size(A);
 I=eye(m);
