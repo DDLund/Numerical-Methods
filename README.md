@@ -11,7 +11,7 @@ Bisection method. Given continuous f: R -> R, endpoints [a,b] with sign(f(a)) !=
 Newton's Method. Given f:R^n -> R^n, initial inout x0, finds xf such that f(xf) = 0. f must be continuously differentiable. The method generally  has a quadratic rate o convergence, but may fail to converge. For more details, see the [wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method) article.
 
 
-## Iteritive Linear Solvers
+## Linear Solvers
 Methods of solving for x in the equation Ax=b, and associated tasks.
 
 ### modified_richardson_method.m
@@ -36,8 +36,7 @@ Iteritive method to solve Ax=b for A real symmetric positive-definite matrix.
 ### ConjGrad.m
 Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n steps, where A is nxn.
 
-
-### LUSolver.m
+### LU_decomp_solver.m
 Solves Ax=b by L-U factorization with forward and backwrds substitution. Assumes A... Finds L lower trianguler, U upper triangular, so that A = L * U. Then solves the equations Ly = b and Ux = b. Included is a DoLittle factorization, where L has unit diagonal. 
 
 ### PowerMethod.m
