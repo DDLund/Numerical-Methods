@@ -34,10 +34,11 @@ Given an approximate solution to Ax=b, usually found by another method, finds x 
 Iteritive method to solve Ax=b for A real symmetric positive-definite matrix.
 
 ### ConjGrad.m
-Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n iterations, where A is nxn.
+Solves Ax=b for A real symmetric positive-definite matrix. Guarenteed to converge in n steps, where A is nxn.
 
 
 ### LUSolver.m
+Solves Ax=b by L-U factorization with forward and backwrds substitution. Assumes A... Finds L lower trianguler, U upper triangular, so that A = L * U. Then solves the equations Ly = b and Ux = b. Included is a DoLittle factorization, where L has unit diagonal. 
 
 ### PowerMethod.m
 
